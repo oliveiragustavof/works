@@ -1,0 +1,33 @@
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 25px;
+}
+a:hover {
+    text-decoration: underline;
+    color: orange;
+    
+}
+body {
+    background: #d2d2c1 url('https://wallpapercave.com/wp/wp6497465.jpg');
+    font: 16px Arial, Helvetica, sans-serif ;
+}
+#menu {
+    background: #eee9c7;
+    padding: 18px;
+}
+#conteudo {
+    background: #ffffff;
+    padding: 15px;
+    text-align: justify;
+}
+
+h1{
+    color: #dd423e;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#rodape {
+    text-align: center;
+}
