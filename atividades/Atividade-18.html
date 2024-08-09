@@ -1,10 +1,14 @@
 <script>
 
-let calculariImpar= function(numero){
-    return numero + 'é par'
-   }
+    function calcularDobro(numero) {
+        numero = parseFloat(prompt('Digite um numero'))
+        return numero * 2
+    }
 
-   console.log(saudacao('Cristiano'))
-   console.log(saudacao('Pedro'))
-   
+    let resultado = calcularDobro()
+    document.write(resultado)
+    console.log(resultado)
+
+
+
 </script>

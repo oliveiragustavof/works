@@ -1,69 +1,87 @@
-<script>
+<main>
+    <script>
 
-let fruta = prompt ('Digite o nome de uma fruta')
+        let fruta = prompt('Digite o nome de uma fruta')
 
-    switch (fruta) {
+        switch (fruta) {
             case 'abacaxi':
-            document.write('<b>Abacaxi </b> <b>Pineapple </b><br>')
-            break;
+                document.write('<header><div class="format"><b> Abacaxi </b></div><div class="format"><b> Pineapple </b></div><br></header> ')
+                document.write('<div class="imagem"><img src="frutas/abacaxi.jpg" height=100 align=center</img></div>')
+                break;
             case 'banana':
-            document.write('<b>Banana </b> <b>Banana </b><br>')
-            break;
+                document.write('<header><div class="format"><b> Banana </b></div><div class="format"><b> Banana </b></div><br></header> ')
+                document.write('<div class="imagem"><img src="frutas/banana.jpg" height=100 align=center</img></div>')
+                break;
             case 'caqui':
-            document.write('<b>Caqui </b> <b>Khaki </b><br>')
-            break;
+                document.write('<header><div class="format"><b> Caqui </b></div><div class="format"><b> Khaki </b></div><br></header> ')
+                document.write('<div class="imagem"><img src="frutas/caqui.jpg" height=100 align=center</img></div>')
+                break;
             case 'coco':
-            document.write('<b>Coco </b> <b>Coconut </b><br>')
-            break;
+                document.write('<header><div class="format"><b> Coco </b></div><div class="format"><b> Coconut </b></div><br></header> ')
+                document.write('<div class="imagem"><img src="frutas/coco.jpg" height=100 align=center</img></div>')
+                break;
             case 'maca':
-            document.write('<b>Maçã </b> <b>Apple </b><br>')
-            break;
+                document.write('<header><div class="format"><b> Maçã </b></div><div class="format"><b> Apple </b></div><br></header> ')
+                document.write('<div class="imagem"><img src="frutas/maca.jpg" height=100 align=center</img></div>')
+                break;
             case 'mamao':
-            document.write('<b>Mamão </b> <b>Papaya </b><br>')
-            break;
+                document.write('<header><div class="format"><b> Mamão </b></div><div class="format"><b> Papaya </b></div><br></header> ')
+                document.write('<div class="imagem"><img src="frutas/mamao.jpg" height=100 align=center</img></div>')
+                break;
             case 'manga':
-            document.write('<b>Manga </b> <b>Mango </b><br>')
-            break;
+                document.write('<header><div class="format"><b> Manga </b></div><div class="format"><b> Mango </b></div><br></header> ')
+                document.write('<div class="imagem"><img src="frutas/manga.jpg" height=100 align=center</img></div>')
+                break;
             case 'melancia':
-            document.write('<b>Melancia </b> <b>Watermelon </b><br>')
-            break;
+                document.write('<header><div class="format"><b> Melancia </b></div><div class="format"><b> Watermelon </b></div><br></header> ')
+                document.write('<div class="imagem"><img src="frutas/melancia.png" height=100 align=center</img></div>')
+                break;
             case 'melao':
-            document.write('<b>Melão </b> <b>Melon </b><br>')
-            break;
+                document.write('<header><div class="format"><b> Melão </b></div><div class="format"><b> Melon </b></div><br></header> ')
+                document.write('<div class="imagem"><img src="frutas/melao.jpg" height=100 align=center</img></div>')
+                break;
             case 'morango':
-            document.write('<b>Morango </b> <b>Strawberry </b><br>')
-            break;
+                document.write('<header><div class="format"><b> Morango </b></div><div class="format"><b> Strawberry </b></div><br></header> ')
+                document.write('<div class="imagem"><img src="frutas/morango.png" height=100 align=center</img></div>')
+                break;
             case 'pera':
-            document.write('<b>Pera </b> <b>Pear </b><br>')
-            break;
+                document.write('<header><div class="format"><b> Pera </b></div><div class="format"><b> Pear </b></div><br></header> ')
+                document.write('<div class="imagem"><img src="frutas/pera.jpg" height=100 align=center</img></div>')
+                break;
             case 'tangerina':
-            document.write('<div class="format"><b>Tangerina </b></div> <div><b>Tangerine </b><br>')
-            break;
+                document.write('<header><div class="format"><b> Tangerina </b></div><div class="format"><b> Tangerine </b></div><br></header> ')
+                document.write('<div class="imagem"><img src="frutas/tangerina.jpg" height=100 align=center</img></div>')
+                break;
             case 'uva':
-            document.write('<div class="format"><b>Uva </b></div><div class="format2"><b> Grape </b></div><br> <img src="frutas/uva.jpg" width=200</img>')
-            break;
+                document.write('<header><div class="format"><b> Uva </b></div><div class="format"><b> Grape </b></div><br></header> ')
+                document.write('<div class="imagem"><img src="frutas/uva.jpg" height=100 align=center</img></div>')
+                break;
             default:
-            document.write('Fruta inválida');
-    }
-</script>
-
+                document.write('<header><div class="format"><b> Fruta Inválida </b></div><br></header> ')
+                document.write('<div class="imagem"><img src="frutas/caixa.jpg" height=100 align=center</img></div>')
+        }
+    </script>
+</main>
 <style>
+    header {
+        width: 200px;
+        height: 60px;
+        display: flex;
+    }
 
-    
     .format {
         padding: 10px;
-        display: flex;
-        width: 60px;
+        width: 100px;
         height: 30px;
-        background-color: green;
+        background-color: aqua;
         border-radius: 10px;
+        margin-left: 20px;
+
     }
-    .format2 {
-        padding: 10px;
-        display: flex;
-        width: 60px;
-        height: 30px;
-        background-color: green;
-        border-radius: 10px;
+
+    .imagem {
+        margin-top: 50px;
+        border-radius: 100px;
+        margin-left: 40px;
     }
 </style>
