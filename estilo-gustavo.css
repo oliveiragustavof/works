@@ -1,16 +1,16 @@
 body {
-    background-color: gray;
+    background: url('https://wallpapercave.com/wp/wp4469542.jpg');
     color: white;
+    background-position: center;
 }
 
 header {
     padding: 20px;
     text-align: center;
     border: 5px black;
-    background-color: #761118;
-    opacity: 0.9;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 nav {
     padding: 20px;
@@ -21,7 +21,7 @@ nav {
 main {
     width: 800px;
     padding: 10px;
-    height: 1900px;
+    height: 2500px;
     background-color: none;
     margin: auto;
     margin-top: 5px;
@@ -29,25 +29,25 @@ main {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     background-color: black;
-    
+
 
 }
 
 footer {
-    width: 100px;
+    width: 180px;
     background-color: white;
     color: white;
     margin: 0 auto;
     text-align: center;
     margin-top: 300px;
     padding: 5px;
-    border-radius: 30px;
+    border-radius: 50px;
 
 
 }
 
 a {
-    color: white;
+    color: rgb(100, 30, 100);
     text-decoration: none;
     font-weight: bold;
     padding: 5px;
@@ -62,42 +62,5 @@ a:hover {
 
 img {
     border-radius: 90px;
-    width: 60px;
-    align-content: center;
-}
-
-#box1 {
-    margin-top: 15px;
-    width: 400px;
-    height: 400px;
-    line-height: 20px;
-    background-color: #000016;
-    border-radius: 20px;
-    font-size: 15px;
-    border: 3px solid purple;
-    opacity: 0.9;
-}
-#box2 {
-    margin-top: 15px;
-    width: 400px;
-    height: 770px;
-    line-height: 20px;
-    background-color: #000016;
-    border-radius: 20px;
-    font-size: 15px;
-    margin-left: 20px;
-    border: 3px solid purple;
-    opacity: 0.9;
-}
-#box3 {
-    margin-top: 15px;
-    width: 400px;
-    height: 1000px;
-    line-height: 20px;
-    background-color: #000016;
-    border-radius: 20px;
-    font-size: 15px;
-    margin-left: 20px;
-    border: 3px solid purple;
-    opacity: 0.9;
+    width: 70px;
 }
