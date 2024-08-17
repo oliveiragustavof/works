@@ -8,16 +8,11 @@
 </head>
 
 <body>
-    <style>
-        body {
-            background-color: aqua;
-        }
-    </style>
-    <h1>Ao pressionar "Enter" aparecerá um aviso</h1>
+    <h1>Ao pressionar "Enter" aparecerá uma mensagem</h1>
     <script>
         document.onkeydown = function (event) {
             if (event.key === "Enter") {
-                alert('Você pressionou Enter')
+                alert('São Paulo FC, o maior do Brasil!')
             }
         }
     </script>
@@ -25,8 +20,14 @@
     <script>
         document.onkeyup = function (format) {
             if (format.key === "p")
-                alert('Você soltou uma tecla "p"!')
-            document.body.style.backgroundColor = 'green'
+                alert('Que fase tá o Curintia!')
+        }
+    </script>
+    <h1>Ao pressionar "G" aparecerá uma imagem do melhor time do mundo </h1>
+    <script>
+        document.onkeypress = function(evento){
+            if (evento.key === "g")
+            document.write('<img src="https://imagens.ebc.com.br/Jnh5ZLOF6eBfgR85egKfKpBMAoE=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/53211557034_3239edacd3_o.jpg?itok=zUWjh-9U"></img>')
         }
     </script>
 </body>
