@@ -10,27 +10,48 @@
 <body>
     <style>
         body {
-            background-color: rgb(231, 226, 226);
-    
+            background-color: rgb(244, 243, 243);
         }
+
+        main {
+            display: flex;
+            width: 700px;
+            height: 500px;
+
+        }
+
         #texto {
             box-shadow: 1px 1px 1px 1px rgb(97, 96, 96);
             background-color: white;
             align-content: center;
             border-radius: 10px;
-            width: 250px;
+            width: 230px;
             height: 240px;
             padding: 20px;
             font-family: Arial, Helvetica, sans-serif;
+            margin-left: 20px;
+        }
+
+        #texto2 {
+            box-shadow: 1px 1px 1px 1px rgb(97, 96, 96);
+            background-color: white;
+            align-content: center;
+            border-radius: 10px;
+            width: 260px;
+            height: 340px;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 40px;
         }
 
         #botao-cadastrar {
             background-color: green;
             justify-content: center;
-            width: 240px;
-            height: 35px;
+            width: 230px;
+            height: 30px;
             color: white;
             border-radius: 5px;
+            margin-top: 30px;
         }
 
         #cadastro {
@@ -46,34 +67,190 @@
             opacity: 0.5;
         }
 
-        .format{
+        .format {
             font-weight: bold;
             font-size: 15px;
             border-style: none;
         }
 
+        img {
+            margin-top: 20px;
+            width: 100px;
+        }
 
+        #dados {
+            margin-top: 15px;
+        }
+
+        #senha {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        #botao-login {
+            background-color: green;
+            justify-content: center;
+            width: 250px;
+            height: 35px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        #botao-cancelar {
+            background-color: red;
+            justify-content: center;
+            color: white;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .barras {
+            width: 200px;
+            justify-content: center;
+            margin: 5px;
+            opacity: 0.5;
+        }
+
+        .barras2 {
+            width: 230px;
+            justify-content: center;
+            margin: 5px;
+            opacity: 0.5;
+        }
+
+        #container {
+            background-color: white;
+            align-content: center;
+            border-radius: 10px;
+            width: 210px;
+            height: 100px;
+            padding: 5px;
+
+        }
+
+        #mensagemErro {
+            color: #ff0000;
+            font-size: 15px;
+            margin-top: 30px;
+        }
+
+        #mensagemErro2 {
+            color: #ff0000;
+            font-size: 20px;
+            margin-top: 30px;
+        }
     </style>
     <main>
-    <div id="texto">
-        <div id="cadastro" class="format">Cadastro</div>
-        <div id="formulario">
-            <form action="#" name="exemplo08"></form>
-            <label class="format" for="username">Nome:</label><br>
-            <input id="barras" type="text" id="username" name="username"><br>
 
-            <label  class="format" for="username">Email:</label><br>
-            <input id="barras" type="text" id="email" name="email"><br>
+        <div id="texto">
+            <div id="cadastro" class="format">Cadastro</div>
+            <form id="formLogin" onsubmit="return validarFormulario()">
 
-            <label  class="format" for="Password">Senha:</label><br>
-            <input id="barras" type="password" id="pwd" name="pwd"><br><br>
+
+                <label for="nome" class="format">Nome: </label>
+                <input class="barras" type="text" name="nome" id="nome">
+
+
+                <label for="email" class="format">E-mail:</label>
+                <input class="barras" type="email" name="email" id="email">
+
+
+                <label for="senha" class="format">Senha:</label>
+                <input class="barras" type="password" name="senha" id="senha">
+
+
+                <input type="submit" value="Cadastrar" id="botao-cadastrar">
+            </form>
+
+
+            <div id="mensagemErro"></div>
+
         </div>
-        <div id="botao-cadastrar">
-            <input id="botao-cadastrar" type="submit" value="Cadastrar">
-        </div>
 
-    </div>
+
+
+
+        <!-- formulario 2 -->
+
+        <div id="texto2"> Formulário de Logon
+            <div id="format">
+                <center>
+                    <div id="formata-imagem"><img src="https://cdn-icons-png.flaticon.com/512/17/17004.png" alt="">
+                    </div>
+                </center>
+
+                <div id="formulario">
+                    <form id="formLogin" onsubmit="return validarFormulario2()">
+
+
+                        <label for="usuario" class="format">Usuário: </label>
+                        <input class="barras2" type="text" name="usuario" id="usuario">
+
+
+                        <label for="senha2" class="format">Senha:</label>
+                        <input class="barras2" type="password" name="senha2" id="senha2"><br><br>
+
+                </div>
+
+
+            </div>
+            <div id="botao-login">
+                <input id="botao-login" type="submit" value="Cadastrar">
+            </div>
+            </form>
+            <input type="radio" id="dados" name="salvar-dados" value="salvar-dados">
+            <label for="salvar-dados">Salvar dados</label><br>
+
+            <div id="senha">Esqueceu a <a href="#">senha</a>?</div>
+
+            <div>
+                <button id="botao-cancelar">Cancelar</button>
+            </div>
+            <div id="mensagemErro2"></div>
+        </div>
+        <div id="mensagemErro2"></div>
     </main>
 </body>
 
 </html>
+
+<script>
+
+    function validarFormulario() {
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const senha = document.getElementById('senha').value;
+        const mensagemErro = document.getElementById('mensagemErro');
+
+        if (nome === "") {
+            mensagemErro.innerHTML = "Por favor, preencha o campo nome corretamente";
+            return false;
+        }
+        if (email === "") {
+            mensagemErro.innerHTML = "Por favor, preencha o campo e-mail corretamente";
+            return false;
+        }
+        if (senha === "") {
+            mensagemErro.innerHTML = "Por favor, preencha o campo senha corretamente";
+            return false;
+        }
+        return true
+    }
+
+    function validarFormulario2() {
+        const usuario = document.getElementById('usuario').value;
+        const senha2 = document.getElementById('senha2').value;
+        const mensagemErro2 = document.getElementById('mensagemErro2');
+
+        if (usuario === "") {
+            mensagemErro2.innerHTML = "Por favor, preencha o campo usuário corretamente";
+            return false;
+        }
+        if (senha2 === "") {
+            mensagemErro2.innerHTML = "Por favor, preencha o campo senha corretamente";
+            return false;
+        }
+        return true
+    }
+
+</script>
