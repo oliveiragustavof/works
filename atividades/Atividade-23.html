@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-
-<body>
     <style>
-
-        #box {
-            box-shadow: 2px 2px 2px 2px black;
-            width: 500px;
-            height: 300px;
-
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-
-        #button {
-            width: 100px;
+ 
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+ 
+        .container {
+            border: 1px solid black;
+            width: 50%;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            border-radius: 30px;
+        }
+ 
+        .alterar {
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: rgb(183, 238, 220);
+            color: rgb(0, 0, 0);
+            width: 150px;
             height: 50px;
-            background-color: rgb(66, 126, 126);
-            border-radius: 60px;
-            color: white;
-            margin-top: 30px;
+            cursor: pointer;
+            margin-top: 20px;
         }
     </style>
-    
+ 
+</head>
+ 
+<body>
+    <div class="container" id="container"></div>
+    <button class="alterar" onclick="trocar()" style="block-size: auto;">Alterar cor</button>
+ 
     <script>
-        let trocar = prompt('Digite uma cor')
-
-        function acao2() {
-            prompt('Digite novamente')
+        function trocar() {
+            let cor = prompt('Digite a cor');
+            if (cor) {
+                document.getElementById('container').style.backgroundColor = cor;
+            }
         }
     </script>
-<main><center>
-    <div id="box"></div>
-
-    <button id="button" onclick="acao2()">Alterar novamente!</button></center>
-</main>
 </body>
-
+ 
 </html>
