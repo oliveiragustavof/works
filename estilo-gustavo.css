@@ -1,7 +1,7 @@
 body {
-    background: url('https://wallpapercave.com/wp/wp4472386.jpg');
+    background: url('https://wallpapercave.com/wp/wp4472436.jpg');
     color: white;
-    background-position: center;
+
 }
 
 header {
@@ -11,17 +11,10 @@ header {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-nav {
-    padding: 20px;
-    background-color: #cd853f;
-    margin-top: 5px;
-}
-
 main {
     width: 800px;
     padding: 10px;
-    height: 4000px;
+    height: 3900px;
     background-color: none;
     margin: auto;
     margin-top: 5px;
@@ -31,19 +24,10 @@ main {
     background-color: black;
 }
 
-footer {
-    width: 180px;
-    background-color: white;
-    color: white;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 300px;
-    padding: 5px;
-    border-radius: 50px;
-}
+
 
 a {
-    color: rgb(100, 30, 100);
+    color: rgb(42, 100, 30);
     text-decoration: none;
     font-weight: bold;
     padding: 5px;
@@ -51,10 +35,10 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: purple;
+    color: rgb(21, 226, 59);
 }
 
 img {
     border-radius: 90px;
-    width: 70px;
+    width: 150px;
 }
